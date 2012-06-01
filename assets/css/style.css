@@ -1,0 +1,87 @@
+#tutorial {
+	font-size: 150%;
+    overflow: hidden;
+    width: 300px;
+    padding: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-repeat: no-repeat;
+}
+#tutorial.position-right {
+    background-position: 0px 20px;
+    background-image: url('../images/arrow-left.png');
+}
+#tutorial.position-left {
+    background-position: 100% 20px;
+    background-image: url('../images/arrow-right.png');
+}
+#tutorial.position-top {
+    background-position: 100% 20px;
+    background-image: url('../images/arrow-bottom.png');
+}
+#tutorial.position-bottom {
+    background-position: 20px 0px;
+    background-image: url('../images/arrow-top.png');
+}
+#tutorial .title {
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    background-color: #CCC;
+    color: #FFF;
+    padding: 0.8em;
+    margin: 0;
+    clear: both;
+}
+#tutorial h3 {
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+#tutorial .description {
+    padding: 1em;
+    background-color: #FFF;
+}
+#tutorial p {
+    margin: 0;
+    padding: 0.6em;
+    background: #DDD;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    text-align: right;
+}
+#tutorial-next {
+    background: transparent url('../images/next.png') no-repeat left top;
+    padding: 0 8px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+#tutorial-next:hover {
+    text-decoration: none;
+}
+#tutorial-prev {
+    background: transparent url('../images/prev.png') no-repeat left top;
+    padding: 0 8px;
+    margin: 0 5px;
+}
+#tutorial-close {
+    background: transparent url('../images/close.png') no-repeat left top;
+    padding: 8px;
+    margin: 0;
+    float: right;
+}
+body.rtl #tutorial p {
+    text-align: left;
+}
+body.rtl #tutorial-next {
+    background-image: url('../images/prev.png');
+}
+body.rtl #tutorial-prev {
+    background-image: url('../images/next.png');
+}
+body.rtl #tutorial-close {
+    float: left;
+}
